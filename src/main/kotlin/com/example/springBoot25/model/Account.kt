@@ -9,5 +9,10 @@ data class Account(
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "account_seq")
         var id:Long,
 
-        var name :String
+        var name :String,
+
+        @Column(nullable = true)
+        val email :String,
+
+        val sex:String?="M"
 )
