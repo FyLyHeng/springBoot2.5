@@ -1,0 +1,1 @@
+insert into item values (1,"book",7.5)

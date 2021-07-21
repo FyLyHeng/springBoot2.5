@@ -10,5 +10,6 @@ data class Item (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id:Long,
+    var name:String,
     var price:Double
 )
