@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <h1><span th:text="${heading}"></span></h1>
-        <form method="post" th:object="${account}" th:action=@{/account/update}>
+        <form method="post" th:object="${account}" th:action="@{/account/update}">
             <div class="form-group row">
                 <div class="col-sm-12">
                     <input type="hidden" class="form-control" name="id" th:field="${account.id}">
