@@ -7,7 +7,7 @@ data class Account(
         @Id
         @SequenceGenerator(name = "account_seq", sequenceName = "account_seq",allocationSize = 1)
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "account_seq")
-        var id:Long?=-1,
+        var id:Long?=0,
 
         var name :String?="",
 
