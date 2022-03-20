@@ -14,5 +14,8 @@ data class Account(
         @Column(nullable = true)
         val email :String?="",
 
-        val sex:String?="M"
+        val sex:String?="M",
+
+        @OneToMany(mappedBy = "account")
+        var items: List<Item>?=null
 )
